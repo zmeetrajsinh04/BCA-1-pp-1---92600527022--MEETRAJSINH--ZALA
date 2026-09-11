@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Example</title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 2px solid #333;
+            margin: 50px auto;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute; 
+        }
+        .box-p{
+            background-color: #433865;
+            top: 20px;
+            left: 20px;
+            z-index: 3; 
+        }
+                .box-green {
+            background-color: #568964;
+            top: 60px;
+            left: 60px;
+            z-index: 2; 
+        }
+        .box-black {
+            background-color: #000000;
+            top: 100px;
+            left: 100px;
+            z-index: 1; 
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Z-Index Stacking Example</h2>
+
+    <div class="container">
+        <div class="box box-p">p (z-index: 3)</div>
+        <div class="box box-green">green (z-index: 2)</div>
+        <div class="box box-black">black (z-index: 1)</div>
+    </div>
+
+</body>
+</html>
